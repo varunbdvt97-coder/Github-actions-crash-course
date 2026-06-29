@@ -11,5 +11,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Print Hello message
-        run: echo "Hello from GitHub Actions!"
+      - name: Building docker image
+        run: docker build -t my-nginx:v1 .
